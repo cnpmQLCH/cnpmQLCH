@@ -1,0 +1,30 @@
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\bin\Debug\Form Đăng nhập.exe.config
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\bin\Debug\Form Đăng nhập.exe
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\bin\Debug\Form Đăng nhập.pdb
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\bin\Debug\FontAwesome.Sharp.dll
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\FormQLCH.csprojAssemblyReference.cache
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\Form_Đăng_nhập.AccountInfo.resources
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\Form_Đăng_nhập.LoginForm.resources
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\Form_Đăng_nhập.Menu.resources
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\Form_Đăng_nhập.QLKH.resources
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\Form_Đăng_nhập.Properties.Resources.resources
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\FormQLCH.csproj.GenerateResource.cache
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\FormQLCH.csproj.CoreCompileInputs.cache
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\FormQLCH.csproj.CopyComplete
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\Form Đăng nhập.exe
+D:\BAIHOC\HKI&2-2020\CongNghePhanMem\BaoCaoGK\CodeMau\QLCH\obj\Debug\Form Đăng nhập.pdb
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\bin\Debug\Form Đăng nhập.exe.config
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\bin\Debug\Form Đăng nhập.exe
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\bin\Debug\Form Đăng nhập.pdb
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\FormQLCH.csprojAssemblyReference.cache
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\Form_Đăng_nhập.AccountInfo.resources
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\Form_Đăng_nhập.LoginForm.resources
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\Form_Đăng_nhập.Menu.resources
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\Form_Đăng_nhập.QLKH.resources
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\Form_Đăng_nhập.Properties.Resources.resources
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\FormQLCH.csproj.GenerateResource.cache
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\FormQLCH.csproj.CoreCompileInputs.cache
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\FormQLCH.csproj.CopyComplete
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\Form Đăng nhập.exe
+C:\Users\tgtha\Desktop\ThaiTran\HK1 20-21\CNPM\50%\QLCH\QLCH\obj\Debug\Form Đăng nhập.pdb

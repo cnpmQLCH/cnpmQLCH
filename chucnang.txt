@@ -1,0 +1,52 @@
+phải có
+- đăng nhập - phân quyền - tự cấp tài khoản - đăng xuất
+
+# chức năng quản lý cửa hàng xe máy
+
+- trang đang kí admin:
+	+ thông tin nhân viên
+	+ phân quyền chức năng
+
+- quản lý KH
+	+ CRUD
+
+- quản lý NV
+	+ CRUD
+
+- quản lý NCC:
+	+ CRUD
+
+- quản lý bán(xe, phụ tùng): in hóa đơn
+	+ trả góp
+	+ trả thẳng
+	+ bảo hành
+
+- kho
+	+ quản lý nhập kho: xe máy, phụ tùng
+		* phiếu nhập
+
+	+ quản lý xuất kho: xe máy, phụ tùng
+		* phiếu xuất
+
+	+ kiểm kho: 
+		* theo dõi hàng tồn tối thiểu
+		* định kì
+		* báo cáo kiểm kê: số lượng nhập, xuất kho
+
+- báo cáo thống kê doanh thu
+	+ theo tuần
+	+ theo tháng 
+	+ theo năm
+	+ tự chọn
+
+----
+- actor
+	+ admin
+	+ kế toán
+	+ kho
+	
+
+	
+	
+	
+
