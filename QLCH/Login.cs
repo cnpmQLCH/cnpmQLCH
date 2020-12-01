@@ -13,42 +13,60 @@ namespace Form_Đăng_nhập
 {
     public partial class LoginForm : Form
     {
-        public static string ID_USER = "";
+        
         public LoginForm()
         {
             InitializeComponent();
         }
-
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-F18L6VH\SQLEXPRESS;Integrated Security = True");
-
-        private string getID(string ma_nv, string matkhau)
+        
+        private string getID(string username, string pass)
         {
             string id = "";
-            try
+            using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
             {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Nhanvien WHERE MA_NV ='" + ma_nv + "' and PASSWORD='" + matkhau + "'", con);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                if (dt != null)
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Nhanvien WHERE MA_NV ='" + username + "' AND PASSWORD='" + pass + "'", con))
                 {
-                    foreach (DataRow dr in dt.Rows)
+                    con.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    if (dt != null)
                     {
-                        id = dr["MA_NV"].ToString();
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            id = dr["MA_NV"].ToString();
+                        }
                     }
+                    con.Close();
+                }
+                return id;
+            }
+        }
+
+        private int getPermission(string id_user)
+        {
+            int id_per = 0;
+            using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Nhanvien WHERE MA_NV = '" + id_user +"'", con))
+                {
+                    con.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    if (dt != null)
+                    {
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            id_per = (int)dr["QUYEN"];
+                        }
+                    }
+                    con.Close();
                 }
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Lỗi xảy ra khi truy vấn dữ liệu hoặc kết nối với server thất bại !");
-            }
-            finally
-            {
-                con.Close();
-            }
-            return id;
+            return id_per;
         }
+
 
         private void Lb_QuenMatkhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -91,17 +109,32 @@ namespace Form_Đăng_nhập
 
         }
 
+        public static string ID_USER = "";
+        public static int ID_PER = 0;
         private void Btn_Dangnhap_Click(object sender, EventArgs e)
         {
-            ID_USER = getID(ma_nv.Text, matkhau.Text);
+            ID_USER = getID(Txtb_Taikhoan.Text, TxtbMatkhau.Text);
             if (ID_USER != "")
             {
-                MessageBox.Show("Đăng nhập với id: " + ID_USER);
+                ID_PER = getPermission(Txtb_Taikhoan.Text);
+                if (ID_PER == 0)
+                {
+                    Menu menu = new Menu();
+                    menu.Show();
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Phân quyền là: " + ID_PER);
+                }
             }
             else
             {
-                MessageBox.Show("Tài khoảng và mật khẩu không đúng !");
+                MessageBox.Show("Tài khoảng hoặc mật khẩu không đúng !");
             }
+            
         }
+
+        
     }
 }

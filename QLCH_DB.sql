@@ -129,3 +129,11 @@ create table ChitietPN(
 go
 
 ALTER TABLE Nhanvien ADD PASSWORD nvarchar(50);
+ALTER TABLE Nhanvien ADD QUYEN int;
+ALTER TABLE Nhanvien DROP column QUYEN;
+
+select MA_NV, PASSWORD, QUYEN
+from Nhanvien
+
+select * 
+from Nhanvien

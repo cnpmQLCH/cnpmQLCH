@@ -1,0 +1,7 @@
+-Phương thức
+	get_ID: lấy id từ csdl
+	get_Permission: lấy quyền
+
+-Biến:
+	ID_USER: lấy id từ get_ID
+	ID_PER: lấy id_per từ get_Permission
