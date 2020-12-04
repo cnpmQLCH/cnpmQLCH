@@ -50,6 +50,7 @@ namespace QLXM
             this.panelInfo = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelSlideMenu.SuspendLayout();
             this.panelKhoSubmenu.SuspendLayout();
             this.panelKHSubmenu.SuspendLayout();
@@ -62,6 +63,7 @@ namespace QLXM
             // 
             this.panelSlideMenu.AutoScroll = true;
             this.panelSlideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelSlideMenu.Controls.Add(this.panel1);
             this.panelSlideMenu.Controls.Add(this.btThoat);
             this.panelSlideMenu.Controls.Add(this.panelKhoSubmenu);
             this.panelSlideMenu.Controls.Add(this.btQLKho);
@@ -74,7 +76,7 @@ namespace QLXM
             this.panelSlideMenu.ForeColor = System.Drawing.Color.Cornsilk;
             this.panelSlideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSlideMenu.Name = "panelSlideMenu";
-            this.panelSlideMenu.Size = new System.Drawing.Size(250, 734);
+            this.panelSlideMenu.Size = new System.Drawing.Size(250, 875);
             this.panelSlideMenu.TabIndex = 0;
             // 
             // btThoat
@@ -87,7 +89,7 @@ namespace QLXM
             this.btThoat.Location = new System.Drawing.Point(0, 595);
             this.btThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(250, 41);
+            this.btThoat.Size = new System.Drawing.Size(250, 90);
             this.btThoat.TabIndex = 7;
             this.btThoat.Text = "Đăng Xuất";
             this.btThoat.UseVisualStyleBackColor = true;
@@ -338,9 +340,9 @@ namespace QLXM
             // 
             this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelInfo.Location = new System.Drawing.Point(250, 663);
+            this.panelInfo.Location = new System.Drawing.Point(250, 804);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(932, 71);
+            this.panelInfo.Size = new System.Drawing.Size(1149, 71);
             this.panelInfo.TabIndex = 1;
             // 
             // panelChildForm
@@ -350,14 +352,14 @@ namespace QLXM
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(932, 663);
+            this.panelChildForm.Size = new System.Drawing.Size(1149, 804);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLXM.Properties.Resources.Logo_Honda;
-            this.pictureBox1.Location = new System.Drawing.Point(259, 206);
+            this.pictureBox1.Location = new System.Drawing.Point(431, 310);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 229);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -365,15 +367,23 @@ namespace QLXM
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 685);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 190);
+            this.panel1.TabIndex = 8;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 734);
+            this.ClientSize = new System.Drawing.Size(1399, 875);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelInfo);
             this.Controls.Add(this.panelSlideMenu);
-            this.MinimumSize = new System.Drawing.Size(1200, 781);
+            this.MinimumSize = new System.Drawing.Size(1417, 922);
             this.Name = "Menu";
             this.Text = "Menu";
             this.panelSlideMenu.ResumeLayout(false);
@@ -410,5 +420,6 @@ namespace QLXM
         private System.Windows.Forms.Button CRUDNCC;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btThoat;
+        private System.Windows.Forms.Panel panel1;
     }
 }

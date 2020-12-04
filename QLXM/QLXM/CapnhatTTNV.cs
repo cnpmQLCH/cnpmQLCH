@@ -80,7 +80,138 @@ namespace QLXM
             txtNgayvl.Enabled = kt;
             txtpass.Enabled = kt;
         }
-        private void btThem_Click(object sender, EventArgs e)
+        
+
+       
+
+        private void btTrove_Click(object sender, EventArgs e)
+        {
+            MenuQL fr = new MenuQL();
+            fr.Show();
+            this.Hide();
+        }
+
+
+        private void btThoat_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btXoa_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                for (int i = 0; i < dgvNV.SelectedRows.Count; i++)
+                {
+                    string st = dgvNV.SelectedRows[i].Cells[0].Value.ToString();
+                    var qr = from d in qlxm.NhanViens
+                             where d.MaNV == st
+                             select d;
+                    qlxm.NhanViens.Remove(qr.FirstOrDefault());
+                }
+                qlxm.SaveChanges();
+                MessageBox.Show("Xóa thành công", "Thông báo");
+                LoadNV();
+            }
+        }
+
+        private void btSua_Click_1(object sender, EventArgs e)
+        {
+            if (btSua.Text == "Sửa")
+            {
+                btSua.Text = "Lưu";
+                vohieuhoa(true);
+                txtManv.Enabled = false;
+            }
+            else
+            {
+                if (txtManv.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtManv.Focus();
+                    return;
+                }
+                if (txthoten.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập họ tên nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txthoten.Focus();
+                    return;
+                }
+                if (txtgt.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập giới tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtgt.Focus();
+                    return;
+                }
+                if (txtNs.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập ngày sinh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtNs.Focus();
+                    return;
+                }
+                if (txtdc.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập địa chỉ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtdc.Focus();
+                    return;
+                }
+                if (txtSdt.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtSdt.Focus();
+                    return;
+                }
+                if (txtCv.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập chức vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtCv.Focus();
+                    return;
+                }
+                if (txtCMND.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập số chứng minh nhân dân", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtCMND.Focus();
+                    return;
+                }
+                if (txtNgayvl.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập ngày vào làm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtNgayvl.Focus();
+                    return;
+                }
+                if (txtpass.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập Password", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtpass.Focus();
+                    return;
+                }
+                else
+                {
+                    NhanVien nv = qlxm.NhanViens.Single(s => s.MaNV == txtManv.Text);
+                    nv.MaNV = txtManv.Text;
+                    nv.TenNV = txthoten.Text;
+                    nv.GioiTinh = txtgt.Text;
+                    nv.Ngaysinh = Convert.ToDateTime(txtNs.Text);
+                    nv.Diachi = txtdc.Text;
+                    nv.SDT = txtSdt.Text;
+                    nv.ChucVu = txtCv.Text;
+                    nv.CMND = txtCMND.Text;
+                    nv.Ngayvaolam = Convert.ToDateTime(txtNgayvl.Text);
+                    nv.Pass = txtpass.Text;
+                    qlxm.SaveChanges();
+                    MessageBox.Show("Sửa thành công", "Thông báo");
+                    btSua.Enabled = true;
+                    btXoa.Enabled = true;
+                    reset();
+                    LoadNV();
+                }
+            }
+        }
+
+        private void btThem_Click_1(object sender, EventArgs e)
         {
             if (btThem.Text == "Thêm")
             {
@@ -187,133 +318,7 @@ namespace QLXM
             }
         }
 
-        private void btSua_Click(object sender, EventArgs e)
-        {
-            if (btSua.Text == "Sửa")
-            {
-                btSua.Text = "Lưu";
-                vohieuhoa(true);
-                txtManv.Enabled = false;
-            }
-            else
-            {
-                if (txtManv.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtManv.Focus();
-                    return;
-                }
-                if (txthoten.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập họ tên nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txthoten.Focus();
-                    return;
-                }
-                if (txtgt.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập giới tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtgt.Focus();
-                    return;
-                }
-                if (txtNs.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập ngày sinh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtNs.Focus();
-                    return;
-                }
-                if (txtdc.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập địa chỉ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtdc.Focus();
-                    return;
-                }
-                if (txtSdt.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtSdt.Focus();
-                    return;
-                }
-                if (txtCv.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập chức vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtCv.Focus();
-                    return;
-                }
-                if (txtCMND.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập số chứng minh nhân dân", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtCMND.Focus();
-                    return;
-                }
-                if (txtNgayvl.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập ngày vào làm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtNgayvl.Focus();
-                    return;
-                }
-                if (txtpass.Text.Trim().Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập Password", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtpass.Focus();
-                    return;
-                }
-                else
-                {
-                    NhanVien nv = qlxm.NhanViens.Single(s => s.MaNV == txtManv.Text);
-                    nv.MaNV = txtManv.Text;
-                    nv.TenNV = txthoten.Text;
-                    nv.GioiTinh = txtgt.Text;
-                    nv.Ngaysinh = Convert.ToDateTime(txtNs.Text);
-                    nv.Diachi = txtdc.Text;
-                    nv.SDT = txtSdt.Text;
-                    nv.ChucVu = txtCv.Text;
-                    nv.CMND = txtCMND.Text;
-                    nv.Ngayvaolam = Convert.ToDateTime(txtNgayvl.Text);
-                    nv.Pass = txtpass.Text;
-                    qlxm.SaveChanges();
-                    MessageBox.Show("Sửa thành công", "Thông báo");
-                    btSua.Enabled = true;
-                    btXoa.Enabled = true;
-                    reset();
-                    LoadNV();
-                }
-            }
-        }
-
-        private void btXoa_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                for (int i = 0; i < dgvNV.SelectedRows.Count; i++)
-                {
-                    string st = dgvNV.SelectedRows[i].Cells[0].Value.ToString();
-                    var qr = from d in qlxm.NhanViens
-                             where d.MaNV == st
-                             select d;
-                    qlxm.NhanViens.Remove(qr.FirstOrDefault());
-                }
-                qlxm.SaveChanges();
-                MessageBox.Show("Xóa thành công", "Thông báo");
-                LoadNV();
-            }
-        }
-
-        private void btThoat_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuQL fr = new MenuQL();
-            fr.Show();
-            this.Hide();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void dgvNV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

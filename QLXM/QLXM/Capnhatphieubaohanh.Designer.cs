@@ -32,7 +32,6 @@
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btThoat = new System.Windows.Forms.Button();
-            this.btinphieu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvphieuxuat = new System.Windows.Forms.DataGridView();
@@ -73,6 +72,7 @@
             // btThem
             // 
             this.btThem.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btThem.Image = global::QLXM.Properties.Resources.plus1;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btThem.Location = new System.Drawing.Point(851, 135);
             this.btThem.Name = "btThem";
@@ -85,6 +85,7 @@
             // btSua
             // 
             this.btSua.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btSua.Image = global::QLXM.Properties.Resources.edit_button1;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSua.Location = new System.Drawing.Point(851, 200);
             this.btSua.Name = "btSua";
@@ -97,6 +98,7 @@
             // btXoa
             // 
             this.btXoa.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btXoa.Image = global::QLXM.Properties.Resources.trash;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btXoa.Location = new System.Drawing.Point(851, 266);
             this.btXoa.Name = "btXoa";
@@ -109,6 +111,7 @@
             // btThoat
             // 
             this.btThoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btThoat.Image = global::QLXM.Properties.Resources.back;
             this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btThoat.Location = new System.Drawing.Point(851, 329);
             this.btThoat.Name = "btThoat";
@@ -117,18 +120,6 @@
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
-            // 
-            // btinphieu
-            // 
-            this.btinphieu.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btinphieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btinphieu.Location = new System.Drawing.Point(851, 395);
-            this.btinphieu.Name = "btinphieu";
-            this.btinphieu.Size = new System.Drawing.Size(143, 50);
-            this.btinphieu.TabIndex = 3;
-            this.btinphieu.Text = "In Phiếu Bảo Hành";
-            this.btinphieu.UseVisualStyleBackColor = true;
-            this.btinphieu.Click += new System.EventHandler(this.btinphieu_Click);
             // 
             // panel1
             // 
@@ -148,7 +139,7 @@
             // 
             this.groupBox2.Controls.Add(this.dgvphieuxuat);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(687, 206);
@@ -159,7 +150,7 @@
             // dgvphieuxuat
             // 
             this.dgvphieuxuat.AllowUserToAddRows = false;
-            this.dgvphieuxuat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.dgvphieuxuat.BackgroundColor = System.Drawing.Color.Silver;
             this.dgvphieuxuat.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvphieuxuat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvphieuxuat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -169,7 +160,7 @@
             this.Column4,
             this.Column5});
             this.dgvphieuxuat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvphieuxuat.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvphieuxuat.GridColor = System.Drawing.Color.Silver;
             this.dgvphieuxuat.Location = new System.Drawing.Point(3, 26);
             this.dgvphieuxuat.Name = "dgvphieuxuat";
             this.dgvphieuxuat.RowHeadersWidth = 51;
@@ -243,7 +234,7 @@
             this.groupBox1.Controls.Add(this.txtmakh);
             this.groupBox1.Controls.Add(this.txtmaphieubh);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.MinimumSize = new System.Drawing.Size(684, 314);
             this.groupBox1.Name = "groupBox1";
@@ -263,7 +254,7 @@
             // 
             // dgvbh
             // 
-            this.dgvbh.BackgroundColor = System.Drawing.Color.Black;
+            this.dgvbh.BackgroundColor = System.Drawing.Color.Silver;
             this.dgvbh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvbh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
@@ -273,7 +264,7 @@
             this.Column10,
             this.Column11});
             this.dgvbh.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvbh.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvbh.GridColor = System.Drawing.Color.Silver;
             this.dgvbh.Location = new System.Drawing.Point(3, 171);
             this.dgvbh.Name = "dgvbh";
             this.dgvbh.RowHeadersWidth = 51;
@@ -331,7 +322,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(331, 132);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 22);
@@ -341,7 +332,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(331, 89);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 22);
@@ -351,7 +342,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(331, 42);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 22);
@@ -361,7 +352,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(29, 124);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 22);
@@ -371,7 +362,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(29, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 22);
@@ -381,7 +372,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(14, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 22);
@@ -427,11 +418,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1004, 550);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btinphieu);
             this.Controls.Add(this.btThoat);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
@@ -459,7 +449,6 @@
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btThoat;
-        private System.Windows.Forms.Button btinphieu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvphieuxuat;

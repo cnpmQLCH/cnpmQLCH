@@ -59,6 +59,7 @@ namespace QLXM
             txttenxe.Text = "";
         }
 
+
         private void btThem_Click(object sender, EventArgs e)
         {
             if (btThem.Text == "Thêm")
@@ -169,7 +170,7 @@ namespace QLXM
 
         private void bttrove_Click(object sender, EventArgs e)
         {
-            Nhaphang fr = new Nhaphang();
+            Chitiethoadonxuat fr = new Chitiethoadonxuat();
             fr.Show();
             this.Hide();
         }

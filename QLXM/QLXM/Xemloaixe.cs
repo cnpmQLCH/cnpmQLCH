@@ -18,17 +18,18 @@ namespace QLXM
         }
 
         QLXMEntities qlxm = new QLXMEntities();
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            CapnhatXe fr = new CapnhatXe();
-            fr.Show();
-            this.Hide();
-        }
+        
 
         private void Xemloaixe_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = qlxm.Loaixes.ToList();
             dataGridView1.Columns[2].Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TimkiemXe s = new TimkiemXe();
+            s.Show();
         }
     }
 }

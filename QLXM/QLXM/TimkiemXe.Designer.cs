@@ -50,7 +50,6 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bttrove = new System.Windows.Forms.Button();
             this.btThoat = new System.Windows.Forms.Button();
             this.btTim = new System.Windows.Forms.Button();
             this.btHienhet = new System.Windows.Forms.Button();
@@ -61,8 +60,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.MistyRose;
-            this.groupBox1.Controls.Add(this.bttrove);
+            this.groupBox1.BackColor = System.Drawing.Color.Silver;
             this.groupBox1.Controls.Add(this.btThoat);
             this.groupBox1.Controls.Add(this.btTim);
             this.groupBox1.Controls.Add(this.btHienhet);
@@ -83,21 +81,21 @@
             // 
             this.txt_tinhtrang.Location = new System.Drawing.Point(162, 154);
             this.txt_tinhtrang.Name = "txt_tinhtrang";
-            this.txt_tinhtrang.Size = new System.Drawing.Size(165, 26);
+            this.txt_tinhtrang.Size = new System.Drawing.Size(165, 30);
             this.txt_tinhtrang.TabIndex = 3;
             // 
             // txt_mancc
             // 
             this.txt_mancc.Location = new System.Drawing.Point(162, 95);
             this.txt_mancc.Name = "txt_mancc";
-            this.txt_mancc.Size = new System.Drawing.Size(165, 26);
+            this.txt_mancc.Size = new System.Drawing.Size(165, 30);
             this.txt_mancc.TabIndex = 3;
             // 
             // txt_tenxe
             // 
             this.txt_tenxe.Location = new System.Drawing.Point(162, 39);
             this.txt_tenxe.Name = "txt_tenxe";
-            this.txt_tenxe.Size = new System.Drawing.Size(165, 26);
+            this.txt_tenxe.Size = new System.Drawing.Size(165, 30);
             this.txt_tenxe.TabIndex = 3;
             // 
             // cb_tt
@@ -105,7 +103,7 @@
             this.cb_tt.AutoSize = true;
             this.cb_tt.Location = new System.Drawing.Point(32, 157);
             this.cb_tt.Name = "cb_tt";
-            this.cb_tt.Size = new System.Drawing.Size(88, 23);
+            this.cb_tt.Size = new System.Drawing.Size(112, 26);
             this.cb_tt.TabIndex = 2;
             this.cb_tt.Text = "Tình trạng";
             this.cb_tt.UseVisualStyleBackColor = true;
@@ -116,7 +114,7 @@
             this.cb_mancc.AutoSize = true;
             this.cb_mancc.Location = new System.Drawing.Point(32, 98);
             this.cb_mancc.Name = "cb_mancc";
-            this.cb_mancc.Size = new System.Drawing.Size(87, 23);
+            this.cb_mancc.Size = new System.Drawing.Size(103, 26);
             this.cb_mancc.TabIndex = 1;
             this.cb_mancc.Text = "Mã NCC";
             this.cb_mancc.UseVisualStyleBackColor = true;
@@ -127,7 +125,7 @@
             this.cb_tenxe.AutoSize = true;
             this.cb_tenxe.Location = new System.Drawing.Point(32, 39);
             this.cb_tenxe.Name = "cb_tenxe";
-            this.cb_tenxe.Size = new System.Drawing.Size(69, 23);
+            this.cb_tenxe.Size = new System.Drawing.Size(85, 26);
             this.cb_tenxe.TabIndex = 0;
             this.cb_tenxe.Text = "Tên xe";
             this.cb_tenxe.UseVisualStyleBackColor = true;
@@ -137,9 +135,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(238, 19);
+            this.label1.Location = new System.Drawing.Point(238, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 24);
+            this.label1.Size = new System.Drawing.Size(334, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "TRA CỨU THÔNG TIN XE";
             // 
@@ -171,6 +169,7 @@
             this.Column12});
             this.dgv_ht.Location = new System.Drawing.Point(15, 25);
             this.dgv_ht.Name = "dgv_ht";
+            this.dgv_ht.RowHeadersWidth = 51;
             this.dgv_ht.Size = new System.Drawing.Size(680, 170);
             this.dgv_ht.TabIndex = 0;
             // 
@@ -178,105 +177,117 @@
             // 
             this.Column1.DataPropertyName = "MaXe";
             this.Column1.HeaderText = "Mã Xe";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
             // Column2
             // 
             this.Column2.DataPropertyName = "TenXe";
             this.Column2.HeaderText = "Tên Xe";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
             this.Column3.DataPropertyName = "Maloaixe";
             this.Column3.HeaderText = "Mã loại xe";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "MaNCC";
             this.Column4.HeaderText = "Mã NCC";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
             // 
             // Column5
             // 
             this.Column5.DataPropertyName = "GiaNhap";
             this.Column5.HeaderText = "Giá Nhập";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
             // 
             // Column6
             // 
             this.Column6.DataPropertyName = "GiaBan";
             this.Column6.HeaderText = "Giá Bán";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
             // 
             // Column7
             // 
             this.Column7.DataPropertyName = "SoLuong";
             this.Column7.HeaderText = "Số Lượng";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
             // 
             // Column8
             // 
             this.Column8.DataPropertyName = "SoKhung";
             this.Column8.HeaderText = "Số Khung";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
             // 
             // Column9
             // 
             this.Column9.DataPropertyName = "SoMay";
             this.Column9.HeaderText = "Số Máy";
+            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
+            this.Column9.Width = 125;
             // 
             // Column10
             // 
             this.Column10.DataPropertyName = "Mau";
             this.Column10.HeaderText = "Màu";
+            this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
+            this.Column10.Width = 125;
             // 
             // Column11
             // 
             this.Column11.DataPropertyName = "Dungtich";
             this.Column11.HeaderText = "Dung Tích";
+            this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
+            this.Column11.Width = 125;
             // 
             // Column12
             // 
             this.Column12.DataPropertyName = "TinhTrang";
             this.Column12.HeaderText = "Tình Trạng";
+            this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
-            // 
-            // bttrove
-            // 
-            this.bttrove.Image = global::QLXM.Properties.Resources.iconfinder_Undo_27885;
-            this.bttrove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bttrove.Location = new System.Drawing.Point(571, 71);
-            this.bttrove.Name = "bttrove";
-            this.bttrove.Size = new System.Drawing.Size(102, 29);
-            this.bttrove.TabIndex = 17;
-            this.bttrove.Text = "Trở về";
-            this.bttrove.UseVisualStyleBackColor = true;
-            this.bttrove.Click += new System.EventHandler(this.bttrove_Click);
+            this.Column12.Width = 125;
             // 
             // btThoat
             // 
-            this.btThoat.Image = global::QLXM.Properties.Resources.iconfinder_exit_3226;
+            this.btThoat.Image = global::QLXM.Properties.Resources.back2;
             this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThoat.Location = new System.Drawing.Point(571, 131);
+            this.btThoat.Location = new System.Drawing.Point(445, 142);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(102, 27);
+            this.btThoat.Size = new System.Drawing.Size(147, 42);
             this.btThoat.TabIndex = 4;
-            this.btThoat.Text = "Thoát";
+            this.btThoat.Text = "Quay lại";
             this.btThoat.UseVisualStyleBackColor = true;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btTim
             // 
-            this.btTim.Image = global::QLXM.Properties.Resources.search__1_;
+            this.btTim.Image = global::QLXM.Properties.Resources.loupe3;
             this.btTim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTim.Location = new System.Drawing.Point(436, 72);
+            this.btTim.Location = new System.Drawing.Point(445, 40);
             this.btTim.Name = "btTim";
-            this.btTim.Size = new System.Drawing.Size(102, 28);
+            this.btTim.Size = new System.Drawing.Size(147, 38);
             this.btTim.TabIndex = 4;
             this.btTim.Text = "Tìm";
             this.btTim.UseVisualStyleBackColor = true;
@@ -284,21 +295,21 @@
             // 
             // btHienhet
             // 
-            this.btHienhet.Image = global::QLXM.Properties.Resources.iconfinder_Preview_27868;
+            this.btHienhet.Image = global::QLXM.Properties.Resources.show;
             this.btHienhet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btHienhet.Location = new System.Drawing.Point(436, 130);
+            this.btHienhet.Location = new System.Drawing.Point(445, 90);
             this.btHienhet.Name = "btHienhet";
-            this.btHienhet.Size = new System.Drawing.Size(102, 28);
+            this.btHienhet.Size = new System.Drawing.Size(147, 40);
             this.btHienhet.TabIndex = 4;
-            this.btHienhet.Text = "Hiện hết";
+            this.btHienhet.Text = "Hiện tất cả";
             this.btHienhet.UseVisualStyleBackColor = true;
             this.btHienhet.Click += new System.EventHandler(this.btHienhet_Click);
             // 
             // TimkiemXe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(745, 520);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
@@ -344,6 +355,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.Button bttrove;
     }
 }

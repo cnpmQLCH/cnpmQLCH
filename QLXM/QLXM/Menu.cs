@@ -136,16 +136,14 @@ namespace QLXM
 
         private void CRUDNhapXuat_Click(object sender, EventArgs e)
         {
-            //....
-            //Your code
-            //....
+            openChildForm(new Nhaphang());
 
             hideSubMenu();
         }
 
         private void CRUDSanPham_Click(object sender, EventArgs e)
         {
-            openChildForm(new Xemloaixe());
+            openChildForm(new TimkiemXe());
             hideSubMenu();
         }
 

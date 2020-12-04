@@ -62,12 +62,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txttenxe = new System.Windows.Forms.TextBox();
-            this.btInhoadonxuat = new System.Windows.Forms.Button();
             this.btThoat = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
-            this.bttrove = new System.Windows.Forms.Button();
             this.btTimkiem = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvXE)).BeginInit();
@@ -208,7 +206,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(359, 9);
+            this.label1.Location = new System.Drawing.Point(368, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(344, 31);
             this.label1.TabIndex = 1;
@@ -364,7 +362,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 39);
+            this.label2.Location = new System.Drawing.Point(12, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 22);
             this.label2.TabIndex = 0;
@@ -383,40 +381,28 @@
             // 
             this.txttenxe.Location = new System.Drawing.Point(746, 151);
             this.txttenxe.Name = "txttenxe";
-            this.txttenxe.Size = new System.Drawing.Size(203, 30);
+            this.txttenxe.Size = new System.Drawing.Size(243, 30);
             this.txttenxe.TabIndex = 4;
-            // 
-            // btInhoadonxuat
-            // 
-            this.btInhoadonxuat.Image = global::QLXM.Properties.Resources.iconfinder_print_printer_1500;
-            this.btInhoadonxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btInhoadonxuat.Location = new System.Drawing.Point(742, 420);
-            this.btInhoadonxuat.Name = "btInhoadonxuat";
-            this.btInhoadonxuat.Size = new System.Drawing.Size(247, 29);
-            this.btInhoadonxuat.TabIndex = 14;
-            this.btInhoadonxuat.Text = "In hóa đơn xuất hàng";
-            this.btInhoadonxuat.UseVisualStyleBackColor = true;
-            this.btInhoadonxuat.Click += new System.EventHandler(this.btInhoadonxuat_Click);
             // 
             // btThoat
             // 
-            this.btThoat.Image = global::QLXM.Properties.Resources.iconfinder_exit_3226;
+            this.btThoat.Image = global::QLXM.Properties.Resources.back1;
             this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThoat.Location = new System.Drawing.Point(875, 351);
+            this.btThoat.Location = new System.Drawing.Point(746, 396);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(114, 29);
+            this.btThoat.Size = new System.Drawing.Size(243, 39);
             this.btThoat.TabIndex = 8;
-            this.btThoat.Text = "Thoát";
+            this.btThoat.Text = "Quay lại";
             this.btThoat.UseVisualStyleBackColor = true;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btXoa
             // 
-            this.btXoa.Image = global::QLXM.Properties.Resources.iconfinder_Remove_27874;
+            this.btXoa.Image = global::QLXM.Properties.Resources.trash1;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXoa.Location = new System.Drawing.Point(742, 351);
+            this.btXoa.Location = new System.Drawing.Point(742, 343);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(114, 29);
+            this.btXoa.Size = new System.Drawing.Size(247, 39);
             this.btXoa.TabIndex = 9;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
@@ -424,11 +410,11 @@
             // 
             // btSua
             // 
-            this.btSua.Image = global::QLXM.Properties.Resources.iconfinder_edit_3218;
+            this.btSua.Image = global::QLXM.Properties.Resources.edit_button1;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSua.Location = new System.Drawing.Point(875, 281);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(114, 29);
+            this.btSua.Size = new System.Drawing.Size(114, 41);
             this.btSua.TabIndex = 10;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
@@ -436,35 +422,23 @@
             // 
             // btThem
             // 
-            this.btThem.Image = global::QLXM.Properties.Resources.iconfinder_add_101239;
+            this.btThem.Image = global::QLXM.Properties.Resources.plus1;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btThem.Location = new System.Drawing.Point(742, 281);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(114, 29);
+            this.btThem.Size = new System.Drawing.Size(114, 41);
             this.btThem.TabIndex = 11;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
-            // bttrove
-            // 
-            this.bttrove.Image = global::QLXM.Properties.Resources.iconfinder_Undo_27885;
-            this.bttrove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bttrove.Location = new System.Drawing.Point(875, 215);
-            this.bttrove.Name = "bttrove";
-            this.bttrove.Size = new System.Drawing.Size(114, 29);
-            this.bttrove.TabIndex = 12;
-            this.bttrove.Text = "Trở về";
-            this.bttrove.UseVisualStyleBackColor = true;
-            this.bttrove.Click += new System.EventHandler(this.bttrove_Click);
-            // 
             // btTimkiem
             // 
-            this.btTimkiem.Image = global::QLXM.Properties.Resources.search__1_;
+            this.btTimkiem.Image = global::QLXM.Properties.Resources.loupe1;
             this.btTimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btTimkiem.Location = new System.Drawing.Point(742, 215);
             this.btTimkiem.Name = "btTimkiem";
-            this.btTimkiem.Size = new System.Drawing.Size(114, 29);
+            this.btTimkiem.Size = new System.Drawing.Size(247, 40);
             this.btTimkiem.TabIndex = 13;
             this.btTimkiem.Text = "Tìm kiếm";
             this.btTimkiem.UseVisualStyleBackColor = true;
@@ -474,14 +448,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1010, 673);
-            this.Controls.Add(this.btInhoadonxuat);
             this.Controls.Add(this.btThoat);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btThem);
-            this.Controls.Add(this.bttrove);
             this.Controls.Add(this.btTimkiem);
             this.Controls.Add(this.txttenxe);
             this.Controls.Add(this.label6);
@@ -519,12 +491,10 @@
         private System.Windows.Forms.TextBox txtMahdx;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txttenxe;
-        private System.Windows.Forms.Button btInhoadonxuat;
         private System.Windows.Forms.Button btThoat;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btThem;
-        private System.Windows.Forms.Button bttrove;
         private System.Windows.Forms.Button btTimkiem;
         private System.Windows.Forms.DataGridView dgvXE;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

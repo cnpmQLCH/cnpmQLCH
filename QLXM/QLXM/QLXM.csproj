@@ -418,6 +418,27 @@
       <DependentUpon>QLBXM.edmx</DependentUpon>
       <LastGenOutput>QLBXM.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\show.png" />
+    <None Include="Resources\back2.png" />
+    <None Include="Resources\loupe3.png" />
+    <None Include="Resources\written-conversation-speech-bubble-with-letter-i-inside-of-information-for-interface1.png" />
+    <None Include="Resources\loupe2.png" />
+    <None Include="Resources\new-release.png" />
+    <None Include="Resources\written-conversation-speech-bubble-with-letter-i-inside-of-information-for-interface.png" />
+    <None Include="Resources\plus2.png" />
+    <None Include="Resources\back1.png" />
+    <None Include="Resources\trash1.png" />
+    <None Include="Resources\edit-button1.png" />
+    <None Include="Resources\plus1.png" />
+    <None Include="Resources\loupe1.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\edit-button.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\loupe.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\password1.png" />
+    <None Include="Resources\password.png" />
     <None Include="Resources\Logo Honda.png" />
     <None Include="Resources\iconfinder_document_3709.png" />
     <None Include="Resources\iconfinder_application-vnd.ms-excel_24744.png" />

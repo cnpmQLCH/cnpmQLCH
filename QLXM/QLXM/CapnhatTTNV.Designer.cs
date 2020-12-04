@@ -92,6 +92,7 @@
             this.dgvNV.RowHeadersWidth = 51;
             this.dgvNV.Size = new System.Drawing.Size(1020, 259);
             this.dgvNV.TabIndex = 0;
+            this.dgvNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNV_CellContentClick);
             this.dgvNV.Click += new System.EventHandler(this.dgvNV_Click);
             // 
             // Column1
@@ -202,49 +203,57 @@
             // 
             this.btThem.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btThem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btThem.Image = global::QLXM.Properties.Resources.plus2;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThem.Location = new System.Drawing.Point(708, 17);
+            this.btThem.Location = new System.Drawing.Point(779, 12);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(305, 47);
+            this.btThem.Size = new System.Drawing.Size(206, 47);
             this.btThem.TabIndex = 21;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click_1);
             // 
             // btSua
             // 
             this.btSua.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btSua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btSua.Image = global::QLXM.Properties.Resources.edit_button;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSua.Location = new System.Drawing.Point(708, 87);
+            this.btSua.Location = new System.Drawing.Point(779, 82);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(305, 47);
+            this.btSua.Size = new System.Drawing.Size(206, 47);
             this.btSua.TabIndex = 22;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click_1);
             // 
             // btXoa
             // 
             this.btXoa.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btXoa.Image = global::QLXM.Properties.Resources.trash1;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXoa.Location = new System.Drawing.Point(708, 163);
+            this.btXoa.Location = new System.Drawing.Point(779, 158);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(305, 47);
+            this.btXoa.Size = new System.Drawing.Size(206, 47);
             this.btXoa.TabIndex = 23;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click_1);
             // 
             // btThoat
             // 
             this.btThoat.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btThoat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btThoat.Image = global::QLXM.Properties.Resources.back1;
             this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThoat.Location = new System.Drawing.Point(708, 231);
+            this.btThoat.Location = new System.Drawing.Point(779, 226);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(305, 47);
+            this.btThoat.Size = new System.Drawing.Size(206, 47);
             this.btThoat.TabIndex = 24;
-            this.btThoat.Text = "Thoát";
+            this.btThoat.Text = "Quay lại";
             this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click_1);
             // 
             // groupBox1
             // 
@@ -269,7 +278,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(3, 4);
             this.groupBox1.MaximumSize = new System.Drawing.Size(689, 281);
             this.groupBox1.MinimumSize = new System.Drawing.Size(592, 281);
@@ -365,6 +374,7 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(358, 58);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(94, 22);
@@ -375,6 +385,7 @@
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label10.Location = new System.Drawing.Point(326, 216);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(125, 22);
@@ -385,6 +396,7 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(352, 101);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(100, 22);
@@ -395,6 +407,7 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(331, 176);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 22);
@@ -405,6 +418,7 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(357, 140);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 22);
@@ -415,6 +429,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(15, 221);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 22);
@@ -425,6 +440,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(23, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 22);
@@ -435,6 +451,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(28, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 22);
@@ -445,6 +462,7 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(22, 181);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 22);
@@ -455,6 +473,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(9, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 22);
@@ -465,7 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1020, 552);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

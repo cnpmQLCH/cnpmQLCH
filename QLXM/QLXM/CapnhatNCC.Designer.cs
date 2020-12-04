@@ -39,10 +39,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btThoat = new System.Windows.Forms.Button();
-            this.btXoa = new System.Windows.Forms.Button();
-            this.btSua = new System.Windows.Forms.Button();
-            this.btThem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvDSNCC = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +46,10 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btThoat = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btSua = new System.Windows.Forms.Button();
+            this.btThem = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSNCC)).BeginInit();
@@ -67,7 +67,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(651, 221);
@@ -114,6 +114,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(341, 122);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 22);
@@ -123,6 +124,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(341, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 22);
@@ -132,6 +134,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(35, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 22);
@@ -141,6 +144,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(35, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 22);
@@ -150,59 +154,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(35, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 22);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã NCC:";
-            // 
-            // btThoat
-            // 
-            this.btThoat.Image = global::QLXM.Properties.Resources.iconfinder_exit_3226;
-            this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThoat.Location = new System.Drawing.Point(498, 252);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(109, 61);
-            this.btThoat.TabIndex = 4;
-            this.btThoat.Text = "Thoát";
-            this.btThoat.UseVisualStyleBackColor = true;
-            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
-            // 
-            // btXoa
-            // 
-            this.btXoa.Image = global::QLXM.Properties.Resources.iconfinder_Remove_27874;
-            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXoa.Location = new System.Drawing.Point(360, 252);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(120, 61);
-            this.btXoa.TabIndex = 5;
-            this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
-            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
-            // 
-            // btSua
-            // 
-            this.btSua.Image = global::QLXM.Properties.Resources.iconfinder_edit_3218;
-            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSua.Location = new System.Drawing.Point(229, 252);
-            this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(120, 61);
-            this.btSua.TabIndex = 6;
-            this.btSua.Text = "Sửa";
-            this.btSua.UseVisualStyleBackColor = true;
-            this.btSua.Click += new System.EventHandler(this.btSua_Click);
-            // 
-            // btThem
-            // 
-            this.btThem.Image = global::QLXM.Properties.Resources.iconfinder_add_101239;
-            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThem.Location = new System.Drawing.Point(92, 252);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(120, 61);
-            this.btThem.TabIndex = 7;
-            this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
-            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // panel1
             // 
@@ -269,11 +226,59 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 125;
             // 
+            // btThoat
+            // 
+            this.btThoat.Image = global::QLXM.Properties.Resources.back1;
+            this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThoat.Location = new System.Drawing.Point(524, 252);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(139, 61);
+            this.btThoat.TabIndex = 4;
+            this.btThoat.Text = "Quay lại";
+            this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
+            // btXoa
+            // 
+            this.btXoa.Image = global::QLXM.Properties.Resources.trash1;
+            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btXoa.Location = new System.Drawing.Point(357, 252);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(140, 61);
+            this.btXoa.TabIndex = 5;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
+            // 
+            // btSua
+            // 
+            this.btSua.Image = global::QLXM.Properties.Resources.edit_button;
+            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSua.Location = new System.Drawing.Point(183, 252);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(133, 61);
+            this.btSua.TabIndex = 6;
+            this.btSua.Text = "Sửa";
+            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
+            // 
+            // btThem
+            // 
+            this.btThem.Image = global::QLXM.Properties.Resources.plus2;
+            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThem.Location = new System.Drawing.Point(12, 252);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(131, 61);
+            this.btThem.TabIndex = 7;
+            this.btThem.Text = "Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
+            // 
             // CapnhatNCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(670, 550);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btThoat);
