@@ -226,5 +226,10 @@ namespace QLXM
             txtsdt.Text = dgvDSNCC.CurrentRow.Cells[3].Value.ToString();
             txtemail.Text = dgvDSNCC.CurrentRow.Cells[4].Value.ToString();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

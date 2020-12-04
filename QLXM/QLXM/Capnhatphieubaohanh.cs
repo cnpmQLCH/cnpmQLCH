@@ -213,5 +213,30 @@ namespace QLXM
             fr.Show();
             this.Hide();
         }
+
+        private void txtngaymua_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttgbh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtmaxe_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvbh_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

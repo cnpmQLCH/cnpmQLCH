@@ -80,6 +80,7 @@ namespace QLXM
         #region Quan Ly Nhan Vien
         private void CRUDNV_Click(object sender, EventArgs e)
         {
+            openChildForm(new CapnhatTTNV());
             //....
             //Your code
             //....
@@ -110,9 +111,7 @@ namespace QLXM
 
         private void CRUDHD_Click(object sender, EventArgs e)
         {
-            //....
-            //Your code
-            //....
+            openChildForm(new Capnhatphieubaohanh());
 
             hideSubMenu();
         }
@@ -130,9 +129,7 @@ namespace QLXM
         #region Quan Ly Kho
         private void CRUDNCC_Click(object sender, EventArgs e)
         {
-            //....
-            //Your code
-            //....
+            openChildForm(new CapnhatNCC());
 
             hideSubMenu();
         }
@@ -148,10 +145,7 @@ namespace QLXM
 
         private void CRUDSanPham_Click(object sender, EventArgs e)
         {
-            //....
-            //Your code
-            //....
-
+            openChildForm(new Xemloaixe());
             hideSubMenu();
         }
 

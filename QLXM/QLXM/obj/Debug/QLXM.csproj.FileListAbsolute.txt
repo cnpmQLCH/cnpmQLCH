@@ -192,4 +192,3 @@ D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.csproj.Copy
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.exe
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.pdb
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.Menu.resources
-D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.Form1.resources

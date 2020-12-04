@@ -243,5 +243,10 @@ namespace QLXM
         {
 
         }
+
+        private void dgvKH_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

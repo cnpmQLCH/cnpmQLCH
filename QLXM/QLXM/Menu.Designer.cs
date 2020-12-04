@@ -74,7 +74,7 @@ namespace QLXM
             this.panelSlideMenu.ForeColor = System.Drawing.Color.Cornsilk;
             this.panelSlideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSlideMenu.Name = "panelSlideMenu";
-            this.panelSlideMenu.Size = new System.Drawing.Size(250, 667);
+            this.panelSlideMenu.Size = new System.Drawing.Size(250, 734);
             this.panelSlideMenu.TabIndex = 0;
             // 
             // btThoat
@@ -338,9 +338,9 @@ namespace QLXM
             // 
             this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelInfo.Location = new System.Drawing.Point(250, 596);
+            this.panelInfo.Location = new System.Drawing.Point(250, 663);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(867, 71);
+            this.panelInfo.Size = new System.Drawing.Size(932, 71);
             this.panelInfo.TabIndex = 1;
             // 
             // panelChildForm
@@ -350,7 +350,7 @@ namespace QLXM
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(867, 596);
+            this.panelChildForm.Size = new System.Drawing.Size(932, 663);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
@@ -369,10 +369,11 @@ namespace QLXM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1117, 667);
+            this.ClientSize = new System.Drawing.Size(1182, 734);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelInfo);
             this.Controls.Add(this.panelSlideMenu);
+            this.MinimumSize = new System.Drawing.Size(1200, 781);
             this.Name = "Menu";
             this.Text = "Menu";
             this.panelSlideMenu.ResumeLayout(false);
