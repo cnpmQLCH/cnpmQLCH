@@ -31,8 +31,8 @@ namespace QLXM
 
         }
 
-        private Menu activeForm = null;
-        private void openChildForm(Menu childForm)
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -100,6 +100,7 @@ namespace QLXM
         #region Quan Ly Khach Hang
         private void CRUDKH_Click(object sender, EventArgs e)
         {
+            openChildForm(new CapnhatthongtinKH());
             //....
             //Your code
             //....
@@ -175,7 +176,7 @@ namespace QLXM
         private void btQLKH_Click(object sender, EventArgs e)
         {
             showSubMenu(panelKHSubmenu);
-            openChildForm(new CapnhatthongtinKH());
+            
         }
 
         private void QLKho_Click(object sender, EventArgs e)
@@ -203,6 +204,11 @@ namespace QLXM
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
         {
 
         }

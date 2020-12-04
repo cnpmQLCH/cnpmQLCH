@@ -30,6 +30,7 @@ namespace QLXM
         private void InitializeComponent()
         {
             this.panelSlideMenu = new System.Windows.Forms.Panel();
+            this.btThoat = new System.Windows.Forms.Button();
             this.panelKhoSubmenu = new System.Windows.Forms.Panel();
             this.CRUDBC_Kho = new System.Windows.Forms.Button();
             this.CRUSanPham = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@ namespace QLXM
             this.panelInfo = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btThoat = new System.Windows.Forms.Button();
             this.panelSlideMenu.SuspendLayout();
             this.panelKhoSubmenu.SuspendLayout();
             this.panelKHSubmenu.SuspendLayout();
@@ -74,8 +74,24 @@ namespace QLXM
             this.panelSlideMenu.ForeColor = System.Drawing.Color.Cornsilk;
             this.panelSlideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSlideMenu.Name = "panelSlideMenu";
-            this.panelSlideMenu.Size = new System.Drawing.Size(250, 496);
+            this.panelSlideMenu.Size = new System.Drawing.Size(250, 667);
             this.panelSlideMenu.TabIndex = 0;
+            // 
+            // btThoat
+            // 
+            this.btThoat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btThoat.FlatAppearance.BorderSize = 0;
+            this.btThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btThoat.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThoat.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btThoat.Location = new System.Drawing.Point(0, 595);
+            this.btThoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(250, 41);
+            this.btThoat.TabIndex = 7;
+            this.btThoat.Text = "Đăng Xuất";
+            this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // panelKhoSubmenu
             // 
@@ -87,7 +103,7 @@ namespace QLXM
             this.panelKhoSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelKhoSubmenu.Location = new System.Drawing.Point(0, 435);
             this.panelKhoSubmenu.Name = "panelKhoSubmenu";
-            this.panelKhoSubmenu.Size = new System.Drawing.Size(229, 160);
+            this.panelKhoSubmenu.Size = new System.Drawing.Size(250, 160);
             this.panelKhoSubmenu.TabIndex = 6;
             // 
             // CRUDBC_Kho
@@ -100,7 +116,7 @@ namespace QLXM
             this.CRUDBC_Kho.Location = new System.Drawing.Point(0, 120);
             this.CRUDBC_Kho.Margin = new System.Windows.Forms.Padding(2);
             this.CRUDBC_Kho.Name = "CRUDBC_Kho";
-            this.CRUDBC_Kho.Size = new System.Drawing.Size(229, 40);
+            this.CRUDBC_Kho.Size = new System.Drawing.Size(250, 40);
             this.CRUDBC_Kho.TabIndex = 3;
             this.CRUDBC_Kho.Text = "Báo Cáo";
             this.CRUDBC_Kho.UseVisualStyleBackColor = true;
@@ -116,7 +132,7 @@ namespace QLXM
             this.CRUSanPham.Location = new System.Drawing.Point(0, 80);
             this.CRUSanPham.Margin = new System.Windows.Forms.Padding(2);
             this.CRUSanPham.Name = "CRUSanPham";
-            this.CRUSanPham.Size = new System.Drawing.Size(229, 40);
+            this.CRUSanPham.Size = new System.Drawing.Size(250, 40);
             this.CRUSanPham.TabIndex = 2;
             this.CRUSanPham.Text = "Thông Tin Sản Phẩm";
             this.CRUSanPham.UseVisualStyleBackColor = true;
@@ -132,7 +148,7 @@ namespace QLXM
             this.CRUDNhapXuat.Location = new System.Drawing.Point(0, 40);
             this.CRUDNhapXuat.Margin = new System.Windows.Forms.Padding(2);
             this.CRUDNhapXuat.Name = "CRUDNhapXuat";
-            this.CRUDNhapXuat.Size = new System.Drawing.Size(229, 40);
+            this.CRUDNhapXuat.Size = new System.Drawing.Size(250, 40);
             this.CRUDNhapXuat.TabIndex = 1;
             this.CRUDNhapXuat.Text = "Thông Tin Nhập - Xuất";
             this.CRUDNhapXuat.UseVisualStyleBackColor = true;
@@ -148,7 +164,7 @@ namespace QLXM
             this.CRUDNCC.Location = new System.Drawing.Point(0, 0);
             this.CRUDNCC.Margin = new System.Windows.Forms.Padding(2);
             this.CRUDNCC.Name = "CRUDNCC";
-            this.CRUDNCC.Size = new System.Drawing.Size(229, 40);
+            this.CRUDNCC.Size = new System.Drawing.Size(250, 40);
             this.CRUDNCC.TabIndex = 0;
             this.CRUDNCC.Text = "Thông Tin Nhà Cung Cấp";
             this.CRUDNCC.UseVisualStyleBackColor = true;
@@ -165,7 +181,7 @@ namespace QLXM
             this.btQLKho.Location = new System.Drawing.Point(0, 390);
             this.btQLKho.Margin = new System.Windows.Forms.Padding(2);
             this.btQLKho.Name = "btQLKho";
-            this.btQLKho.Size = new System.Drawing.Size(229, 45);
+            this.btQLKho.Size = new System.Drawing.Size(250, 45);
             this.btQLKho.TabIndex = 5;
             this.btQLKho.Text = "Quản Lý Kho";
             this.btQLKho.UseVisualStyleBackColor = false;
@@ -180,7 +196,7 @@ namespace QLXM
             this.panelKHSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelKHSubmenu.Location = new System.Drawing.Point(0, 270);
             this.panelKHSubmenu.Name = "panelKHSubmenu";
-            this.panelKHSubmenu.Size = new System.Drawing.Size(229, 120);
+            this.panelKHSubmenu.Size = new System.Drawing.Size(250, 120);
             this.panelKHSubmenu.TabIndex = 4;
             // 
             // CRUDBC_KH
@@ -193,7 +209,7 @@ namespace QLXM
             this.CRUDBC_KH.Location = new System.Drawing.Point(0, 80);
             this.CRUDBC_KH.Margin = new System.Windows.Forms.Padding(2);
             this.CRUDBC_KH.Name = "CRUDBC_KH";
-            this.CRUDBC_KH.Size = new System.Drawing.Size(229, 40);
+            this.CRUDBC_KH.Size = new System.Drawing.Size(250, 40);
             this.CRUDBC_KH.TabIndex = 2;
             this.CRUDBC_KH.Text = "Báo Cáo";
             this.CRUDBC_KH.UseVisualStyleBackColor = true;
@@ -209,7 +225,7 @@ namespace QLXM
             this.CRUDHD.Location = new System.Drawing.Point(0, 40);
             this.CRUDHD.Margin = new System.Windows.Forms.Padding(2);
             this.CRUDHD.Name = "CRUDHD";
-            this.CRUDHD.Size = new System.Drawing.Size(229, 40);
+            this.CRUDHD.Size = new System.Drawing.Size(250, 40);
             this.CRUDHD.TabIndex = 1;
             this.CRUDHD.Text = "Thông Tin Hóa Đơn";
             this.CRUDHD.UseVisualStyleBackColor = true;
@@ -225,7 +241,7 @@ namespace QLXM
             this.CRUDKH.Location = new System.Drawing.Point(0, 0);
             this.CRUDKH.Margin = new System.Windows.Forms.Padding(2);
             this.CRUDKH.Name = "CRUDKH";
-            this.CRUDKH.Size = new System.Drawing.Size(229, 40);
+            this.CRUDKH.Size = new System.Drawing.Size(250, 40);
             this.CRUDKH.TabIndex = 0;
             this.CRUDKH.Text = "Thông Tin Khách Hàng";
             this.CRUDKH.UseVisualStyleBackColor = true;
@@ -242,7 +258,7 @@ namespace QLXM
             this.btQLKH.Location = new System.Drawing.Point(0, 225);
             this.btQLKH.Margin = new System.Windows.Forms.Padding(2);
             this.btQLKH.Name = "btQLKH";
-            this.btQLKH.Size = new System.Drawing.Size(229, 45);
+            this.btQLKH.Size = new System.Drawing.Size(250, 45);
             this.btQLKH.TabIndex = 3;
             this.btQLKH.Text = "Quản Lý Khách Hàng";
             this.btQLKH.UseVisualStyleBackColor = false;
@@ -256,7 +272,7 @@ namespace QLXM
             this.panelNVSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNVSubmenu.Location = new System.Drawing.Point(0, 145);
             this.panelNVSubmenu.Name = "panelNVSubmenu";
-            this.panelNVSubmenu.Size = new System.Drawing.Size(229, 80);
+            this.panelNVSubmenu.Size = new System.Drawing.Size(250, 80);
             this.panelNVSubmenu.TabIndex = 2;
             // 
             // PhanQuyen
@@ -269,7 +285,7 @@ namespace QLXM
             this.PhanQuyen.Location = new System.Drawing.Point(0, 40);
             this.PhanQuyen.Margin = new System.Windows.Forms.Padding(2);
             this.PhanQuyen.Name = "PhanQuyen";
-            this.PhanQuyen.Size = new System.Drawing.Size(229, 40);
+            this.PhanQuyen.Size = new System.Drawing.Size(250, 40);
             this.PhanQuyen.TabIndex = 1;
             this.PhanQuyen.Text = "Phân Quyền Nhân Viên";
             this.PhanQuyen.UseVisualStyleBackColor = true;
@@ -285,7 +301,7 @@ namespace QLXM
             this.CRUDNV.Location = new System.Drawing.Point(0, 0);
             this.CRUDNV.Margin = new System.Windows.Forms.Padding(2);
             this.CRUDNV.Name = "CRUDNV";
-            this.CRUDNV.Size = new System.Drawing.Size(229, 40);
+            this.CRUDNV.Size = new System.Drawing.Size(250, 40);
             this.CRUDNV.TabIndex = 0;
             this.CRUDNV.Text = "Thông Tin Nhân Viên";
             this.CRUDNV.UseVisualStyleBackColor = true;
@@ -302,7 +318,7 @@ namespace QLXM
             this.btQLNV.Location = new System.Drawing.Point(0, 100);
             this.btQLNV.Margin = new System.Windows.Forms.Padding(2);
             this.btQLNV.Name = "btQLNV";
-            this.btQLNV.Size = new System.Drawing.Size(229, 45);
+            this.btQLNV.Size = new System.Drawing.Size(250, 45);
             this.btQLNV.TabIndex = 1;
             this.btQLNV.Text = "Quản Lý Nhân Viên ";
             this.btQLNV.UseVisualStyleBackColor = false;
@@ -315,16 +331,16 @@ namespace QLXM
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(229, 100);
+            this.panelLogo.Size = new System.Drawing.Size(250, 100);
             this.panelLogo.TabIndex = 0;
             // 
             // panelInfo
             // 
             this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelInfo.Location = new System.Drawing.Point(250, 396);
+            this.panelInfo.Location = new System.Drawing.Point(250, 596);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(715, 100);
+            this.panelInfo.Size = new System.Drawing.Size(867, 71);
             this.panelInfo.TabIndex = 1;
             // 
             // panelChildForm
@@ -334,13 +350,14 @@ namespace QLXM
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(715, 396);
+            this.panelChildForm.Size = new System.Drawing.Size(867, 596);
             this.panelChildForm.TabIndex = 2;
+            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLXM.Properties.Resources.Logo_Honda;
-            this.pictureBox1.Location = new System.Drawing.Point(232, 100);
+            this.pictureBox1.Location = new System.Drawing.Point(259, 206);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 229);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -348,31 +365,14 @@ namespace QLXM
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
-            // btThoat
-            // 
-            this.btThoat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btThoat.FlatAppearance.BorderSize = 0;
-            this.btThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btThoat.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThoat.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btThoat.Location = new System.Drawing.Point(0, 595);
-            this.btThoat.Margin = new System.Windows.Forms.Padding(2);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(229, 75);
-            this.btThoat.TabIndex = 7;
-            this.btThoat.Text = "Đăng Xuất";
-            this.btThoat.UseVisualStyleBackColor = true;
-            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 496);
+            this.ClientSize = new System.Drawing.Size(1117, 667);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelInfo);
             this.Controls.Add(this.panelSlideMenu);
-            this.MinimumSize = new System.Drawing.Size(983, 543);
             this.Name = "Menu";
             this.Text = "Menu";
             this.panelSlideMenu.ResumeLayout(false);

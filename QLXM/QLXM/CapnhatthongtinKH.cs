@@ -238,5 +238,10 @@ namespace QLXM
             this.Hide();
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
