@@ -63,6 +63,66 @@ namespace QLXM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1200px_User_font_awesome_svg {
+            get {
+                object obj = ResourceManager.GetObject("1200px-User_font_awesome.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Abstract_background_04__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Abstract background 04 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Abstract_background_09 {
+            get {
+                object obj = ResourceManager.GetObject("Abstract background 09", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Abstract_background_091 {
+            get {
+                object obj = ResourceManager.GetObject("Abstract background 091", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Abstract_background_092 {
+            get {
+                object obj = ResourceManager.GetObject("Abstract background 092", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap avatar {
+            get {
+                object obj = ResourceManager.GetObject("avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back {
             get {
                 object obj = ResourceManager.GetObject("back", resourceCulture);
@@ -286,6 +346,16 @@ namespace QLXM.Properties {
         internal static System.Drawing.Bitmap iconfinder_Undo_27885 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Undo_27885", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

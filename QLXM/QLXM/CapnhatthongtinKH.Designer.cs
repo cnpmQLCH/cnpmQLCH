@@ -407,8 +407,6 @@
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1277, 596);
-            this.MinimumSize = new System.Drawing.Size(867, 596);
             this.Name = "CapnhatthongtinKH";
             this.Text = "CapnhatthongtinKH";
             this.Load += new System.EventHandler(this.CapnhatthongtinKH_Load);

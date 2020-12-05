@@ -71,12 +71,13 @@
             // 
             // btThem
             // 
-            this.btThem.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btThem.Image = global::QLXM.Properties.Resources.plus1;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThem.Location = new System.Drawing.Point(851, 135);
+            this.btThem.Location = new System.Drawing.Point(868, 135);
+            this.btThem.MaximumSize = new System.Drawing.Size(175, 50);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(143, 50);
+            this.btThem.Size = new System.Drawing.Size(175, 50);
             this.btThem.TabIndex = 3;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
@@ -84,12 +85,13 @@
             // 
             // btSua
             // 
-            this.btSua.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btSua.Image = global::QLXM.Properties.Resources.edit_button1;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSua.Location = new System.Drawing.Point(851, 200);
+            this.btSua.Location = new System.Drawing.Point(868, 200);
+            this.btSua.MaximumSize = new System.Drawing.Size(175, 50);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(143, 50);
+            this.btSua.Size = new System.Drawing.Size(175, 50);
             this.btSua.TabIndex = 3;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
@@ -97,12 +99,13 @@
             // 
             // btXoa
             // 
-            this.btXoa.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btXoa.Image = global::QLXM.Properties.Resources.trash;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXoa.Location = new System.Drawing.Point(851, 266);
+            this.btXoa.Location = new System.Drawing.Point(868, 266);
+            this.btXoa.MaximumSize = new System.Drawing.Size(175, 50);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(143, 50);
+            this.btXoa.Size = new System.Drawing.Size(175, 50);
             this.btXoa.TabIndex = 3;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
@@ -110,14 +113,15 @@
             // 
             // btThoat
             // 
-            this.btThoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btThoat.Image = global::QLXM.Properties.Resources.back;
             this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThoat.Location = new System.Drawing.Point(851, 329);
+            this.btThoat.Location = new System.Drawing.Point(868, 329);
+            this.btThoat.MaximumSize = new System.Drawing.Size(175, 50);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(143, 50);
+            this.btThoat.Size = new System.Drawing.Size(175, 50);
             this.btThoat.TabIndex = 3;
-            this.btThoat.Text = "Thoát";
+            this.btThoat.Text = "Quay lại";
             this.btThoat.UseVisualStyleBackColor = true;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
@@ -419,7 +423,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1004, 550);
+            this.ClientSize = new System.Drawing.Size(1070, 550);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btThoat);
@@ -428,8 +432,6 @@
             this.Controls.Add(this.btThem);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1022, 597);
-            this.MinimumSize = new System.Drawing.Size(889, 597);
             this.Name = "Capnhatphieubaohanh";
             this.Text = "Capnhatphieubaohanh";
             this.Load += new System.EventHandler(this.Capnhatphieubaohanh_Load);

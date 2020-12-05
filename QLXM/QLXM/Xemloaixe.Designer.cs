@@ -48,7 +48,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(296, 240);
+            this.dataGridView1.Size = new System.Drawing.Size(306, 240);
             this.dataGridView1.TabIndex = 2;
             // 
             // Column1
@@ -81,9 +81,9 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(296, 0);
+            this.button1.Location = new System.Drawing.Point(306, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 240);
+            this.button1.Size = new System.Drawing.Size(111, 240);
             this.button1.TabIndex = 3;
             this.button1.Text = "TÌm kiếm";
             this.button1.UseVisualStyleBackColor = true;

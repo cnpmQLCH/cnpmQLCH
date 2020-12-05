@@ -418,6 +418,13 @@
       <DependentUpon>QLBXM.edmx</DependentUpon>
       <LastGenOutput>QLBXM.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Abstract background 092.jpg" />
+    <None Include="Resources\1200px-User_font_awesome.svg.png" />
+    <None Include="Resources\avatar.png" />
+    <None Include="Resources\Abstract background 091.jpg" />
+    <None Include="Resources\Abstract background 09.jpg" />
+    <None Include="Resources\Abstract background 04 %281%29.jpg" />
+    <None Include="Resources\images.jpg" />
     <None Include="Resources\show.png" />
     <None Include="Resources\back2.png" />
     <None Include="Resources\loupe3.png" />

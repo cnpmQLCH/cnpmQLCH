@@ -124,6 +124,9 @@
   <data name="loupe2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loupe2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Abstract background 091" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Abstract background 091.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,11 +142,8 @@
   <data name="plus2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_capnhat_27862" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_capnhat_27862.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="show" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\show.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconfinder_exit_3226" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_exit_3226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,6 +160,9 @@
   <data name="iconfinder_add_101239" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_add_101239.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1200px-User_font_awesome.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1200px-User_font_awesome.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="trash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,6 +174,9 @@
   </data>
   <data name="iconfinder_print_printer_1500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_print_printer_1500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="loupe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loupe1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,23 +202,32 @@
   <data name="iconfinder_document_3709" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_document_3709.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconfinder_Settings_27879" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_Settings_27879.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Abstract background 09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Abstract background 09.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconfinder_Preview_27868" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_Preview_27868.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="password1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfinder_capnhat_27862" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_capnhat_27862.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit-button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfinder_Stock Index Down_27880" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_Stock Index Down_27880.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconfinder_edit_3218" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_edit_32182.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,11 +235,17 @@
   <data name="written-conversation-speech-bubble-with-letter-i-inside-of-information-for-interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\written-conversation-speech-bubble-with-letter-i-inside-of-information-for-interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconfinder_Stock Index Down_27880" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_Stock Index Down_27880.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfinder_Settings_27879" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_Settings_27879.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Abstract background 04 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Abstract background 04 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,7 +259,7 @@
   <data name="new-release" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new-release.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="show" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\show.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Abstract background 092" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Abstract background 092.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

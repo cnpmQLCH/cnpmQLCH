@@ -29,34 +29,32 @@ namespace QLXM
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.panelSlideMenu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btThoat = new System.Windows.Forms.Button();
             this.panelKhoSubmenu = new System.Windows.Forms.Panel();
-            this.CRUDBC_Kho = new System.Windows.Forms.Button();
             this.CRUSanPham = new System.Windows.Forms.Button();
             this.CRUDNhapXuat = new System.Windows.Forms.Button();
             this.CRUDNCC = new System.Windows.Forms.Button();
             this.btQLKho = new System.Windows.Forms.Button();
             this.panelKHSubmenu = new System.Windows.Forms.Panel();
-            this.CRUDBC_KH = new System.Windows.Forms.Button();
             this.CRUDHD = new System.Windows.Forms.Button();
             this.CRUDKH = new System.Windows.Forms.Button();
             this.btQLKH = new System.Windows.Forms.Button();
             this.panelNVSubmenu = new System.Windows.Forms.Panel();
-            this.PhanQuyen = new System.Windows.Forms.Button();
             this.CRUDNV = new System.Windows.Forms.Button();
             this.btQLNV = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelSlideMenu.SuspendLayout();
             this.panelKhoSubmenu.SuspendLayout();
             this.panelKHSubmenu.SuspendLayout();
             this.panelNVSubmenu.SuspendLayout();
             this.panelChildForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSlideMenu
@@ -79,6 +77,14 @@ namespace QLXM
             this.panelSlideMenu.Size = new System.Drawing.Size(250, 875);
             this.panelSlideMenu.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 565);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 310);
+            this.panel1.TabIndex = 8;
+            // 
             // btThoat
             // 
             this.btThoat.Dock = System.Windows.Forms.DockStyle.Top;
@@ -86,7 +92,7 @@ namespace QLXM
             this.btThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btThoat.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThoat.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btThoat.Location = new System.Drawing.Point(0, 595);
+            this.btThoat.Location = new System.Drawing.Point(0, 475);
             this.btThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(250, 90);
@@ -98,31 +104,14 @@ namespace QLXM
             // panelKhoSubmenu
             // 
             this.panelKhoSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelKhoSubmenu.Controls.Add(this.CRUDBC_Kho);
             this.panelKhoSubmenu.Controls.Add(this.CRUSanPham);
             this.panelKhoSubmenu.Controls.Add(this.CRUDNhapXuat);
             this.panelKhoSubmenu.Controls.Add(this.CRUDNCC);
             this.panelKhoSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelKhoSubmenu.Location = new System.Drawing.Point(0, 435);
+            this.panelKhoSubmenu.Location = new System.Drawing.Point(0, 355);
             this.panelKhoSubmenu.Name = "panelKhoSubmenu";
-            this.panelKhoSubmenu.Size = new System.Drawing.Size(250, 160);
+            this.panelKhoSubmenu.Size = new System.Drawing.Size(250, 120);
             this.panelKhoSubmenu.TabIndex = 6;
-            // 
-            // CRUDBC_Kho
-            // 
-            this.CRUDBC_Kho.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CRUDBC_Kho.FlatAppearance.BorderSize = 0;
-            this.CRUDBC_Kho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CRUDBC_Kho.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CRUDBC_Kho.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.CRUDBC_Kho.Location = new System.Drawing.Point(0, 120);
-            this.CRUDBC_Kho.Margin = new System.Windows.Forms.Padding(2);
-            this.CRUDBC_Kho.Name = "CRUDBC_Kho";
-            this.CRUDBC_Kho.Size = new System.Drawing.Size(250, 40);
-            this.CRUDBC_Kho.TabIndex = 3;
-            this.CRUDBC_Kho.Text = "Báo Cáo";
-            this.CRUDBC_Kho.UseVisualStyleBackColor = true;
-            this.CRUDBC_Kho.Click += new System.EventHandler(this.CRUDBC_Kho_Click);
             // 
             // CRUSanPham
             // 
@@ -180,7 +169,7 @@ namespace QLXM
             this.btQLKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btQLKho.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQLKho.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btQLKho.Location = new System.Drawing.Point(0, 390);
+            this.btQLKho.Location = new System.Drawing.Point(0, 310);
             this.btQLKho.Margin = new System.Windows.Forms.Padding(2);
             this.btQLKho.Name = "btQLKho";
             this.btQLKho.Size = new System.Drawing.Size(250, 45);
@@ -192,30 +181,13 @@ namespace QLXM
             // panelKHSubmenu
             // 
             this.panelKHSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelKHSubmenu.Controls.Add(this.CRUDBC_KH);
             this.panelKHSubmenu.Controls.Add(this.CRUDHD);
             this.panelKHSubmenu.Controls.Add(this.CRUDKH);
             this.panelKHSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelKHSubmenu.Location = new System.Drawing.Point(0, 270);
+            this.panelKHSubmenu.Location = new System.Drawing.Point(0, 230);
             this.panelKHSubmenu.Name = "panelKHSubmenu";
-            this.panelKHSubmenu.Size = new System.Drawing.Size(250, 120);
+            this.panelKHSubmenu.Size = new System.Drawing.Size(250, 80);
             this.panelKHSubmenu.TabIndex = 4;
-            // 
-            // CRUDBC_KH
-            // 
-            this.CRUDBC_KH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CRUDBC_KH.FlatAppearance.BorderSize = 0;
-            this.CRUDBC_KH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CRUDBC_KH.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CRUDBC_KH.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.CRUDBC_KH.Location = new System.Drawing.Point(0, 80);
-            this.CRUDBC_KH.Margin = new System.Windows.Forms.Padding(2);
-            this.CRUDBC_KH.Name = "CRUDBC_KH";
-            this.CRUDBC_KH.Size = new System.Drawing.Size(250, 40);
-            this.CRUDBC_KH.TabIndex = 2;
-            this.CRUDBC_KH.Text = "Báo Cáo";
-            this.CRUDBC_KH.UseVisualStyleBackColor = true;
-            this.CRUDBC_KH.Click += new System.EventHandler(this.CRUDBC_Click);
             // 
             // CRUDHD
             // 
@@ -257,7 +229,7 @@ namespace QLXM
             this.btQLKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btQLKH.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQLKH.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btQLKH.Location = new System.Drawing.Point(0, 225);
+            this.btQLKH.Location = new System.Drawing.Point(0, 185);
             this.btQLKH.Margin = new System.Windows.Forms.Padding(2);
             this.btQLKH.Name = "btQLKH";
             this.btQLKH.Size = new System.Drawing.Size(250, 45);
@@ -269,29 +241,12 @@ namespace QLXM
             // panelNVSubmenu
             // 
             this.panelNVSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelNVSubmenu.Controls.Add(this.PhanQuyen);
             this.panelNVSubmenu.Controls.Add(this.CRUDNV);
             this.panelNVSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNVSubmenu.Location = new System.Drawing.Point(0, 145);
             this.panelNVSubmenu.Name = "panelNVSubmenu";
-            this.panelNVSubmenu.Size = new System.Drawing.Size(250, 80);
+            this.panelNVSubmenu.Size = new System.Drawing.Size(250, 40);
             this.panelNVSubmenu.TabIndex = 2;
-            // 
-            // PhanQuyen
-            // 
-            this.PhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PhanQuyen.FlatAppearance.BorderSize = 0;
-            this.PhanQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PhanQuyen.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhanQuyen.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.PhanQuyen.Location = new System.Drawing.Point(0, 40);
-            this.PhanQuyen.Margin = new System.Windows.Forms.Padding(2);
-            this.PhanQuyen.Name = "PhanQuyen";
-            this.PhanQuyen.Size = new System.Drawing.Size(250, 40);
-            this.PhanQuyen.TabIndex = 1;
-            this.PhanQuyen.Text = "Phân Quyền Nhân Viên";
-            this.PhanQuyen.UseVisualStyleBackColor = true;
-            this.PhanQuyen.Click += new System.EventHandler(this.PhanQuyen_Click);
             // 
             // CRUDNV
             // 
@@ -348,7 +303,7 @@ namespace QLXM
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panelChildForm.Controls.Add(this.pictureBox1);
+            this.panelChildForm.Controls.Add(this.pictureBox2);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
@@ -356,24 +311,16 @@ namespace QLXM
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            this.pictureBox1.Image = global::QLXM.Properties.Resources.Logo_Honda;
-            this.pictureBox1.Location = new System.Drawing.Point(431, 310);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(320, 229);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 685);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 190);
-            this.panel1.TabIndex = 8;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::QLXM.Properties.Resources.Logo_Honda;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1149, 804);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // Menu
             // 
@@ -383,6 +330,7 @@ namespace QLXM
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelInfo);
             this.Controls.Add(this.panelSlideMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1417, 922);
             this.Name = "Menu";
             this.Text = "Menu";
@@ -391,8 +339,7 @@ namespace QLXM
             this.panelKHSubmenu.ResumeLayout(false);
             this.panelNVSubmenu.ResumeLayout(false);
             this.panelChildForm.ResumeLayout(false);
-            this.panelChildForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -401,7 +348,6 @@ namespace QLXM
 
         private System.Windows.Forms.Panel panelSlideMenu;
         private System.Windows.Forms.Panel panelNVSubmenu;
-        private System.Windows.Forms.Button PhanQuyen;
         private System.Windows.Forms.Button CRUDNV;
         private System.Windows.Forms.Button btQLNV;
         private System.Windows.Forms.Panel panelLogo;
@@ -409,17 +355,15 @@ namespace QLXM
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button btQLKho;
         private System.Windows.Forms.Panel panelKHSubmenu;
-        private System.Windows.Forms.Button CRUDBC_KH;
         private System.Windows.Forms.Button CRUDHD;
         private System.Windows.Forms.Button CRUDKH;
         private System.Windows.Forms.Button btQLKH;
         private System.Windows.Forms.Panel panelKhoSubmenu;
-        private System.Windows.Forms.Button CRUDBC_Kho;
         private System.Windows.Forms.Button CRUSanPham;
         private System.Windows.Forms.Button CRUDNhapXuat;
         private System.Windows.Forms.Button CRUDNCC;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btThoat;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
