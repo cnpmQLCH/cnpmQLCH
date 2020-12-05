@@ -231,13 +231,6 @@ namespace QLXM
             }
         }
 
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuNV fr = new MenuNV();
-            fr.Show();
-            this.Hide();
-
-        }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -247,6 +240,12 @@ namespace QLXM
         private void dgvKH_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TimkiemTTKH kh = new TimkiemTTKH();
+            kh.Show();
         }
     }
 }

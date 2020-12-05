@@ -172,8 +172,6 @@ D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.CapnhatXe.r
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.Chitiethoadonnhap.resources
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.Chitiethoadonxuat.resources
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.Dangnhap.resources
-D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.MenuNV.resources
-D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.MenuQL.resources
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.Nhaphang.resources
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.Properties.Resources.resources
 D:\BAIHOC\HKI&2-2020\CongNghePhanMem\DoAnCK\QLXM\QLXM\obj\Debug\QLXM.rp_PhieuBaoHanh.resources

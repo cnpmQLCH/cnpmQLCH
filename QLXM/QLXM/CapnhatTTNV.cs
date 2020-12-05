@@ -82,15 +82,6 @@ namespace QLXM
         }
         
 
-       
-
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuQL fr = new MenuQL();
-            fr.Show();
-            this.Hide();
-        }
-
 
         private void btThoat_Click_1(object sender, EventArgs e)
         {
@@ -321,6 +312,12 @@ namespace QLXM
         private void dgvNV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TimkiemTTNV nv = new TimkiemTTNV();
+            nv.Show();
         }
     }
 }

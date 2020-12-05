@@ -123,7 +123,7 @@ namespace QLXM
             {
                 btSua.Text = "Lưu";
                 vohieuhoa(true);
-                txtMancc.Enabled = false;
+                txtMancc.Enabled = true;
             }
             else
             {
@@ -199,12 +199,7 @@ namespace QLXM
             }
         }
 
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuQL fr = new MenuQL();
-            fr.Show();
-            this.Hide();
-        }
+        
 
         private void dgvDSNCC_SelectionChanged(object sender, EventArgs e)
         {

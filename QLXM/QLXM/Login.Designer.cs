@@ -43,7 +43,7 @@
             // txttk
             // 
             this.txttk.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txttk.Location = new System.Drawing.Point(254, 172);
+            this.txttk.Location = new System.Drawing.Point(208, 152);
             this.txttk.Name = "txttk";
             this.txttk.Size = new System.Drawing.Size(343, 30);
             this.txttk.TabIndex = 7;
@@ -51,7 +51,7 @@
             // txtmk
             // 
             this.txtmk.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtmk.Location = new System.Drawing.Point(254, 249);
+            this.txtmk.Location = new System.Drawing.Point(208, 229);
             this.txtmk.Name = "txtmk";
             this.txtmk.Size = new System.Drawing.Size(343, 30);
             this.txtmk.TabIndex = 8;
@@ -64,7 +64,7 @@
             this.btthoat.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btthoat.Image = global::QLXM.Properties.Resources.Abstract_background_09;
             this.btthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btthoat.Location = new System.Drawing.Point(463, 301);
+            this.btthoat.Location = new System.Drawing.Point(420, 288);
             this.btthoat.Name = "btthoat";
             this.btthoat.Size = new System.Drawing.Size(131, 60);
             this.btthoat.TabIndex = 6;
@@ -79,7 +79,7 @@
             this.btdangnhap.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btdangnhap.Image = global::QLXM.Properties.Resources.Abstract_background_09;
             this.btdangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btdangnhap.Location = new System.Drawing.Point(230, 301);
+            this.btdangnhap.Location = new System.Drawing.Point(187, 288);
             this.btdangnhap.Name = "btdangnhap";
             this.btdangnhap.Size = new System.Drawing.Size(140, 60);
             this.btdangnhap.TabIndex = 5;
@@ -96,7 +96,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Image = global::QLXM.Properties.Resources.Abstract_background_092;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(269, 76);
+            this.label1.Location = new System.Drawing.Point(226, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(289, 49);
             this.label1.TabIndex = 0;
@@ -108,7 +108,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::QLXM.Properties.Resources._1200px_User_font_awesome_svg;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(212, 172);
+            this.pictureBox1.Location = new System.Drawing.Point(166, 152);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,7 +121,7 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::QLXM.Properties.Resources.password1;
-            this.pictureBox2.Location = new System.Drawing.Point(212, 249);
+            this.pictureBox2.Location = new System.Drawing.Point(166, 229);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

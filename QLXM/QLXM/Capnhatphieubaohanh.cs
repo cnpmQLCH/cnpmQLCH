@@ -61,12 +61,6 @@ namespace QLXM
                 txtmaphieubh.Text = "";
                 txttgbh.Text = "";
                 txtmaphieubh.Focus();
-                txtmakh.Enabled = false;
-                txtmanv.Enabled = false;
-                txtmaxe.Enabled = false;
-                txtngaymua.Enabled = false;
-                btSua.Enabled = false;
-                btXoa.Enabled = false;
             }
             else
             {
@@ -199,12 +193,6 @@ namespace QLXM
             }
         }
 
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuNV fr = new MenuNV();
-            fr.Show();
-            this.Hide();
-        }
 
         private void btinphieu_Click(object sender, EventArgs e)
         {
@@ -235,6 +223,11 @@ namespace QLXM
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvphieuxuat_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

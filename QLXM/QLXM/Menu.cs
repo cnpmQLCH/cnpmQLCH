@@ -12,10 +12,18 @@ namespace QLXM
 {
     public partial class Menu : Form
     {
-        public Menu()
+        public Menu(int id)
         {
             InitializeComponent();
             customizeDesing();
+            if(id == 1)
+            {
+                btQLNV.Enabled = false;
+            }
+            else
+            {
+                btQLNV.Enabled = true;
+            }
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -162,7 +170,9 @@ namespace QLXM
         #region Button Menu
         private void QLNV_Click(object sender, EventArgs e)
         {
+            
             showSubMenu(panelNVSubmenu);
+            
         }
 
         private void btQLKH_Click(object sender, EventArgs e)
@@ -201,6 +211,16 @@ namespace QLXM
         }
 
         private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btPhanQuyen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

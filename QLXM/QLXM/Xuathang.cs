@@ -245,11 +245,6 @@ namespace QLXM
             this.Hide();
         }
 
-        private void bttrove_Click(object sender, EventArgs e)
-        {
-            MenuNV fr = new MenuNV();
-            fr.Show();
-            this.Hide();
-        }
+        
     }
 }

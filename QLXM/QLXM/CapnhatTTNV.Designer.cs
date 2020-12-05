@@ -66,6 +66,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -180,13 +181,14 @@
             this.panel1.Controls.Add(this.dgvNV);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(0, 293);
+            this.panel1.Location = new System.Drawing.Point(0, 305);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1020, 259);
             this.panel1.TabIndex = 13;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btThem);
             this.panel2.Controls.Add(this.btSua);
             this.panel2.Controls.Add(this.btXoa);
@@ -196,7 +198,7 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1020, 293);
+            this.panel2.Size = new System.Drawing.Size(1020, 305);
             this.panel2.TabIndex = 16;
             // 
             // btThem
@@ -205,7 +207,7 @@
             this.btThem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btThem.Image = global::QLXM.Properties.Resources.plus2;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThem.Location = new System.Drawing.Point(779, 12);
+            this.btThem.Location = new System.Drawing.Point(710, 24);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(206, 47);
             this.btThem.TabIndex = 21;
@@ -219,7 +221,7 @@
             this.btSua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btSua.Image = global::QLXM.Properties.Resources.edit_button;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSua.Location = new System.Drawing.Point(779, 82);
+            this.btSua.Location = new System.Drawing.Point(710, 94);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(206, 47);
             this.btSua.TabIndex = 22;
@@ -233,7 +235,7 @@
             this.btXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btXoa.Image = global::QLXM.Properties.Resources.trash1;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXoa.Location = new System.Drawing.Point(779, 158);
+            this.btXoa.Location = new System.Drawing.Point(710, 170);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(206, 47);
             this.btXoa.TabIndex = 23;
@@ -247,7 +249,7 @@
             this.btThoat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btThoat.Image = global::QLXM.Properties.Resources.back1;
             this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThoat.Location = new System.Drawing.Point(779, 226);
+            this.btThoat.Location = new System.Drawing.Point(710, 238);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(206, 47);
             this.btThoat.TabIndex = 24;
@@ -279,7 +281,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(3, 4);
+            this.groupBox1.Location = new System.Drawing.Point(3, 10);
             this.groupBox1.MaximumSize = new System.Drawing.Size(689, 281);
             this.groupBox1.MinimumSize = new System.Drawing.Size(592, 281);
             this.groupBox1.Name = "groupBox1";
@@ -480,12 +482,25 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Giới tính:";
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Image = global::QLXM.Properties.Resources.loupe3;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(933, 97);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 120);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Tìm kiếm";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CapnhatTTNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1020, 552);
+            this.ClientSize = new System.Drawing.Size(1020, 564);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -542,5 +557,6 @@
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btThoat;
+        private System.Windows.Forms.Button button1;
     }
 }

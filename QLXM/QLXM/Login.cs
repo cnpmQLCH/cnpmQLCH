@@ -16,8 +16,12 @@ namespace QLXM
         {
             InitializeComponent();
         }
-
         QLXMEntities qlxm = new QLXMEntities();
+
+
+
+
+
         private void btdangnhap_Click(object sender, EventArgs e)
         {
             if (txttk.Text == "" && txtmk.Text != "")
@@ -37,15 +41,44 @@ namespace QLXM
             }
             else if (txtmk.Text != "" && txttk.Text != "")
             {
+                int id;
+                var ad = from d in qlxm.Admins
+                         where d.Usename == txttk.Text && d.Password == txtmk.Text
+                         select d;
 
-                MessageBox.Show("Đăng nhập thành công", "Thông báo");
-                Menu fr = new Menu();
-                fr.Show();
-                this.Hide();
+                var nv = from d in qlxm.NhanViens
+                         where d.MaNV == txttk.Text && d.Pass == txtmk.Text
+                         select d;
+
+                if (ad.Count() == 0 && nv.Count()==0)
+                {
+                    MessageBox.Show("Tên đăng nhập không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txttk.Focus();
+                    return;
+                }
+                else if (ad.Count()!= 0 && nv.Count() == 0 ) //admin
+                {
+                    MessageBox.Show("Đăng nhập thành công", "Thông báo");
+                    id = 0;
+                    Menu mn = new Menu(id);
+                    mn.Show();
+                    this.Hide();
+                    
+                }
+                
+                else if(nv.Count() != 0 && ad.Count() == 0) //nhan vien
+                {
+                    MessageBox.Show("Đăng nhập thành công", "Thông báo");
+                    id = 1;
+                    Menu mn = new Menu(id);
+                    mn.Show();
+                    this.Hide();
+                }
+
             }
                
         }
-
+        
         private void btthoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)

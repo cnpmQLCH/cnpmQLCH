@@ -37,12 +37,11 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btThoat = new System.Windows.Forms.Button();
-            this.btTrove = new System.Windows.Forms.Button();
-            this.btHienhet = new System.Windows.Forms.Button();
-            this.btTim = new System.Windows.Forms.Button();
             this.rdTenkh = new System.Windows.Forms.RadioButton();
             this.rdMakh = new System.Windows.Forms.RadioButton();
+            this.btThoat = new System.Windows.Forms.Button();
+            this.btHienhet = new System.Windows.Forms.Button();
+            this.btTim = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTTKH)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -52,9 +51,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(204, 9);
+            this.label1.Location = new System.Drawing.Point(151, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 24);
+            this.label1.Size = new System.Drawing.Size(480, 31);
             this.label1.TabIndex = 13;
             this.label1.Text = "TRA CỨU THÔNG TIN KHÁCH HÀNG";
             // 
@@ -79,6 +78,7 @@
             this.Column5});
             this.dgvTTKH.Location = new System.Drawing.Point(15, 25);
             this.dgvTTKH.Name = "dgvTTKH";
+            this.dgvTTKH.RowHeadersWidth = 51;
             this.dgvTTKH.Size = new System.Drawing.Size(691, 219);
             this.dgvTTKH.TabIndex = 12;
             // 
@@ -86,37 +86,46 @@
             // 
             this.Column1.DataPropertyName = "MaKH";
             this.Column1.HeaderText = "Mã KH";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column1.Width = 125;
             // 
             // Column2
             // 
             this.Column2.DataPropertyName = "TenKH";
             this.Column2.HeaderText = "Tên KH";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
             this.Column3.DataPropertyName = "GioiTinh";
             this.Column3.HeaderText = "Giới Tính";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "Diachi";
             this.Column4.HeaderText = "Địa Chỉ";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
             // 
             // Column5
             // 
             this.Column5.DataPropertyName = "SDT";
             this.Column5.HeaderText = "SĐT";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btThoat);
-            this.groupBox2.Controls.Add(this.btTrove);
             this.groupBox2.Controls.Add(this.btHienhet);
             this.groupBox2.Controls.Add(this.btTim);
             this.groupBox2.Controls.Add(this.rdTenkh);
@@ -130,63 +139,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin tìm kiếm";
             // 
-            // btThoat
-            // 
-            this.btThoat.Image = global::QLXM.Properties.Resources.iconfinder_exit_3226;
-            this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThoat.Location = new System.Drawing.Point(549, 103);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(100, 28);
-            this.btThoat.TabIndex = 8;
-            this.btThoat.Text = "Thoát";
-            this.btThoat.UseVisualStyleBackColor = true;
-            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
-            // 
-            // btTrove
-            // 
-            this.btTrove.Image = global::QLXM.Properties.Resources.iconfinder_Undo_27885;
-            this.btTrove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTrove.Location = new System.Drawing.Point(549, 44);
-            this.btTrove.Name = "btTrove";
-            this.btTrove.Size = new System.Drawing.Size(100, 28);
-            this.btTrove.TabIndex = 8;
-            this.btTrove.Text = "Trở về";
-            this.btTrove.UseVisualStyleBackColor = true;
-            this.btTrove.Click += new System.EventHandler(this.btTrove_Click);
-            // 
-            // btHienhet
-            // 
-            this.btHienhet.Image = global::QLXM.Properties.Resources.iconfinder_Preview_27868;
-            this.btHienhet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btHienhet.Location = new System.Drawing.Point(391, 103);
-            this.btHienhet.Margin = new System.Windows.Forms.Padding(4);
-            this.btHienhet.Name = "btHienhet";
-            this.btHienhet.Size = new System.Drawing.Size(100, 28);
-            this.btHienhet.TabIndex = 5;
-            this.btHienhet.Text = "Hiện hết";
-            this.btHienhet.UseVisualStyleBackColor = true;
-            this.btHienhet.Click += new System.EventHandler(this.btHienhet_Click);
-            // 
-            // btTim
-            // 
-            this.btTim.Image = global::QLXM.Properties.Resources.search__1_;
-            this.btTim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTim.Location = new System.Drawing.Point(391, 44);
-            this.btTim.Margin = new System.Windows.Forms.Padding(4);
-            this.btTim.Name = "btTim";
-            this.btTim.Size = new System.Drawing.Size(100, 28);
-            this.btTim.TabIndex = 4;
-            this.btTim.Text = "Tìm";
-            this.btTim.UseVisualStyleBackColor = true;
-            this.btTim.Click += new System.EventHandler(this.btTim_Click);
-            // 
             // rdTenkh
             // 
             this.rdTenkh.AutoSize = true;
             this.rdTenkh.Location = new System.Drawing.Point(41, 103);
             this.rdTenkh.Margin = new System.Windows.Forms.Padding(4);
             this.rdTenkh.Name = "rdTenkh";
-            this.rdTenkh.Size = new System.Drawing.Size(122, 23);
+            this.rdTenkh.Size = new System.Drawing.Size(152, 26);
             this.rdTenkh.TabIndex = 1;
             this.rdTenkh.TabStop = true;
             this.rdTenkh.Text = "Tên khách hàng";
@@ -198,17 +157,55 @@
             this.rdMakh.Location = new System.Drawing.Point(41, 49);
             this.rdMakh.Margin = new System.Windows.Forms.Padding(4);
             this.rdMakh.Name = "rdMakh";
-            this.rdMakh.Size = new System.Drawing.Size(120, 23);
+            this.rdMakh.Size = new System.Drawing.Size(148, 26);
             this.rdMakh.TabIndex = 0;
             this.rdMakh.TabStop = true;
             this.rdMakh.Text = "Mã khách hàng";
             this.rdMakh.UseVisualStyleBackColor = true;
             // 
+            // btThoat
+            // 
+            this.btThoat.Image = global::QLXM.Properties.Resources.back3;
+            this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThoat.Location = new System.Drawing.Point(520, 73);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(146, 38);
+            this.btThoat.TabIndex = 8;
+            this.btThoat.Text = "Quay lại";
+            this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
+            // btHienhet
+            // 
+            this.btHienhet.Image = global::QLXM.Properties.Resources.show2;
+            this.btHienhet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btHienhet.Location = new System.Drawing.Point(340, 73);
+            this.btHienhet.Margin = new System.Windows.Forms.Padding(4);
+            this.btHienhet.Name = "btHienhet";
+            this.btHienhet.Size = new System.Drawing.Size(151, 38);
+            this.btHienhet.TabIndex = 5;
+            this.btHienhet.Text = "Hiện tất cả";
+            this.btHienhet.UseVisualStyleBackColor = true;
+            this.btHienhet.Click += new System.EventHandler(this.btHienhet_Click);
+            // 
+            // btTim
+            // 
+            this.btTim.Image = global::QLXM.Properties.Resources.loupe3;
+            this.btTim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btTim.Location = new System.Drawing.Point(210, 73);
+            this.btTim.Margin = new System.Windows.Forms.Padding(4);
+            this.btTim.Name = "btTim";
+            this.btTim.Size = new System.Drawing.Size(108, 38);
+            this.btTim.TabIndex = 4;
+            this.btTim.Text = "Tìm";
+            this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
+            // 
             // TimkiemTTKH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(759, 524);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -243,6 +240,5 @@
         private System.Windows.Forms.RadioButton rdTenkh;
         private System.Windows.Forms.RadioButton rdMakh;
         private System.Windows.Forms.Button btThoat;
-        private System.Windows.Forms.Button btTrove;
     }
 }

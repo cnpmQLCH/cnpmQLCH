@@ -54,12 +54,7 @@ namespace QLXM
             dgvTTNV.DataSource = qlxm.NhanViens.ToList();
         }
 
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuQL fr = new MenuQL();
-            fr.Show();
-            this.Hide();
-        }
+        
 
         private void btThoat_Click(object sender, EventArgs e)
         {

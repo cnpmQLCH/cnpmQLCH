@@ -17,12 +17,7 @@ namespace QLXM
             InitializeComponent();
         }
         QLXMEntities qlxm = new QLXMEntities();
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuNV fr = new MenuNV();
-            fr.Show();
-            this.Hide();
-        }
+        
 
         private void btThoat_Click(object sender, EventArgs e)
         {

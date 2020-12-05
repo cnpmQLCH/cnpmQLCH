@@ -170,6 +170,7 @@
             this.dgvphieuxuat.RowHeadersWidth = 51;
             this.dgvphieuxuat.Size = new System.Drawing.Size(681, 177);
             this.dgvphieuxuat.TabIndex = 0;
+            this.dgvphieuxuat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvphieuxuat_CellContentClick);
             // 
             // Column1
             // 

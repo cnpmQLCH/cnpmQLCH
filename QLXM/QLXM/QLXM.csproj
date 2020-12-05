@@ -140,18 +140,6 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuNV.Designer.cs">
-      <DependentUpon>MenuNV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuQL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuQL.Designer.cs">
-      <DependentUpon>MenuQL.cs</DependentUpon>
-    </Compile>
     <Compile Include="NCC.cs">
       <DependentUpon>QLBXM.tt</DependentUpon>
     </Compile>
@@ -318,12 +306,6 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuNV.resx">
-      <DependentUpon>MenuNV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuQL.resx">
-      <DependentUpon>MenuQL.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Nhaphang.resx">
       <DependentUpon>Nhaphang.cs</DependentUpon>
     </EmbeddedResource>
@@ -418,6 +400,9 @@
       <DependentUpon>QLBXM.edmx</DependentUpon>
       <LastGenOutput>QLBXM.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\show2.png" />
+    <None Include="Resources\back3.png" />
+    <None Include="Resources\show1.png" />
     <None Include="Resources\Abstract background 092.jpg" />
     <None Include="Resources\1200px-User_font_awesome.svg.png" />
     <None Include="Resources\avatar.png" />

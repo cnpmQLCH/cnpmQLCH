@@ -54,7 +54,7 @@
             this.btTrove.TabIndex = 1;
             this.btTrove.Text = "Trở về";
             this.btTrove.UseVisualStyleBackColor = true;
-            this.btTrove.Click += new System.EventHandler(this.btTrove_Click);
+            
             // 
             // btThoat
             // 

@@ -24,12 +24,7 @@ namespace QLXM
             crystalReportViewer1.ReportSource = tk;
         }
 
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuNV fr = new MenuNV();
-            fr.Show();
-            this.Hide();
-        }
+        
 
         private void btThoat_Click(object sender, EventArgs e)
         {

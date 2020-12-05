@@ -88,12 +88,7 @@ namespace QLXM
             }
         }
 
-        private void btTrove_Click(object sender, EventArgs e)
-        {
-            MenuQL fr = new MenuQL();
-            fr.Show();
-            this.Hide();
-        }
+        
         private void reset()
         {
             txtMaxe.Text = "";
